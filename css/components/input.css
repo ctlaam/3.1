@@ -1,0 +1,46 @@
+.m-input{
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    height: 40px;
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+
+}
+.m-input:focus{
+    border-color: #019160;
+}
+.error.m-input:focus{
+    border-color: #FF4747
+}
+.m-input-error{
+    position: relative;
+}
+.text-error-box-input{
+    background-color: #ff4747;
+    color: #fff;
+    width: 180px;
+    height:50px;
+    position: relative;
+    text-align: center;
+    border-radius:4px;
+    box-sizing: border-box;
+    margin-bottom:2px;
+    margin-left: 20px;
+}
+.text-error{
+    padding:5px;
+}
+.m-arrow-error-input{
+    width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 16px solid #ff4747;
+    position:absolute;
+    right: 82px;
+    bottom:-8px;
+}
+.input-field-form.error{
+    border-color: red   ;
+}

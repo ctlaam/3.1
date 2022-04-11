@@ -1,0 +1,48 @@
+.m-content{
+    position: absolute;
+    top: 48px;
+    left: 225px;
+    right: 0;
+    bottom: 0;
+    padding:24px;
+}
+.m-page-header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height:40px;
+    width: 100%;
+}
+.m-page-title{
+    font-size:20px;
+    font-weight:700;
+}
+
+.m-page-tool-bar{
+    height:40px;
+    width: 100%;
+    margin: 4px 0;
+}
+
+.m-grid{
+    width: 100%;
+    height: calc(100% - 88px);
+    position: relative;
+    padding-bottom: 56px;
+
+}
+.m-grid .m-paging{
+    position:absolute;
+    bottom: 0;
+}
+.m-gird-table{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+}
+.m-input{
+    margin-right: 5px;
+}
+
+
+

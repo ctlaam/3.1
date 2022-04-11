@@ -1,0 +1,115 @@
+.m-table{
+    width:100%;
+    border-collapse:collapse;
+    border:none;
+}
+ul{
+    padding:0px;
+}
+
+.m-table tr {
+    border-bottom: 1px solid #bbbbbb;
+    height:48px;
+}
+.m-table td,th {
+    padding:0 10px;
+}
+
+.m-table tr td:first-child{
+    padding-left: 16px;
+}
+.m-table tbody tr:hover {
+    background-color: #8f8d8d;
+    cursor: pointer;
+}
+.m-table tbody tr.m-row-selected{
+    background-color: rgb(148, 171, 219);
+}
+
+.m-paging{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:56px;
+    padding-top:5px;
+    width:100%;
+    border-top: 1px solid #ccc
+}
+.paging{
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 200px;
+    
+}
+th {
+    background: white;
+    position: sticky;
+    top: 0; /* Don't forget this, required for the stickiness */
+}
+.number-pages{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.page{
+    line-height:34px;
+    width: 34px; 
+    height: 34px;
+    border: 1px solid #bbbbbb;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+}
+.page button{
+    position: relative;
+    left: -2px;
+    top: -1px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    height:36px;
+    width:36px;
+}
+.page-selected button{
+    color: #fff;
+}
+.page:hover{
+    background-color: #bbbbbb;
+    border: 1px solid #bbbbbb;
+
+}
+.page-selected{
+    background-color: #019160; 
+    border: 1px solid #019160;
+
+}
+.people-page{
+    background-color:#bbbbbb;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+.start-page:hover,.prev-page:hover,
+.end-page:hover,.next-page:hover{
+    background-color: #bbbbbb;
+    line-height:20px;
+}
+.start-page,.end-page,.prev-page,.next-page{
+    width: 20px;
+    height:20px;
+    line-height:20px;
+    text-align: center;
+    border-radius:2px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fbfcff;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ebf4ff;
+}

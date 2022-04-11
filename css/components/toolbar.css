@@ -1,0 +1,33 @@
+.m-page-tool-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.m-toolbar-left{
+    display:flex;
+    align-items: center;
+}
+.m-btn-refresh,.m-btn-delete{
+    width: 40px;
+    height: 40px;
+    background-image: url(../../assets/icon/refresh.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position:center;
+    border: 1px solid #cccccc;
+    border-radius:4px;
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+.m-btn-delete{
+    background-image: url("https://img.icons8.com/ios-filled/344/fa314a/delete-trash.png");
+    margin-right: 5px;
+}
+.m-btn-delete:hover{
+    opacity:1
+}
+.m-btn-refresh:hover{
+    opacity: 1
+}

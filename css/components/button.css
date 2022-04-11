@@ -1,0 +1,33 @@
+.m-btn,.m-btn-ok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #019160;
+    border-radius: 4px;
+    height:40px;
+    font-size: 13px;
+    color: #fff;
+    padding-left: 24px;
+    padding-right:24px;
+    text-align: center;
+    min-width:100px;
+    cursor: pointer;
+    border: none;
+
+}
+.m-icon-btn{
+    width:24px;
+    height:20px;
+    padding-right: 8px;
+    
+}
+.m-btn:hover,.m-btn-ok:hover{
+    background-color: #2fbe8e
+}
+.m-btn:active,.m-btn-ok:active{
+    background-color: #01b075
+}
+
+.m-btn-icon{
+    padding: 0 16px
+}

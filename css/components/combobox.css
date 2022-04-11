@@ -1,0 +1,85 @@
+.m-combobox{
+    position: relative;
+    width:200px;
+    color:red;
+    border-radius: 4px;
+    font-size:11px;
+    color: #bbbbbb;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select:none;
+    z-index: 10;
+    outline: none;
+    margin-right: 5px;
+}
+select option {
+    color: #000;
+}
+
+select:focus{
+    border-color: #019160 ;
+}
+.m-combobox-active{
+    border-color: #019160;
+}
+.icon-combobox{
+    padding: 0 12px;
+    border-left: 1px solid #bbbbbb;
+    line-height : 40px;
+    cursor: pointer;
+
+}
+.placeholder{
+    margin: 0 16px
+}
+
+.m-choice-combobox{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 200px;
+    margin:5px 0 5px 0;
+    border: 1px solid #f3f0f0;
+    border-radius:4px ;
+    display:none;
+    user-select:none;
+    z-index: 2;
+    
+}
+.m-choice{
+    padding-left: 36px;
+    font-size: 13px;
+    height:40px;
+    line-height: 40px;
+    color:#000000;
+
+
+}
+.m-choice:first-child{
+    border-radius: 4px 4px 0px 0px;
+}
+.m-choice:last-child{
+    border-radius: 0px 0px 4px 4px;
+}
+.m-choice:hover{
+    background-color: #e9ebee;
+    cursor: pointer;
+    
+}
+.m-choice.active{
+    background-color: #019160;
+    padding-left: 10px;
+    color:#e5e5e5;
+
+}
+.fa-solid.fa-check.icon-active{
+    padding-right:10px;
+    font-size:16px;
+    display:none;
+}
+.active .fa-solid.fa-check.icon-active{
+    display:inline-block;
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- libary -->
+    <link rel="stylesheet" href="./lib/combobox/css/combobox.css" />
+  </head>
+  <body>
+    <div class="m-row">
+      <label for="">3.Combobox</label>
+      <div class="m-row">
+        <div>
+          <!-- <div id="cbxGender" class="m-combobox" mcombobox>
+            <p class="placeholder">Chọn nhập thông tin</p>
+            <div class="icon-combobox">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="m-choice-combobox">
+              <div value="0" class="m-choice">
+                <i class="fa-solid fa-check icon-active"></i>Nam
+              </div>
+              <div value="1" class="m-choice">
+                <i class="fa-solid fa-check icon-active"></i>Nữ
+              </div>
+              <div value="2" class="m-choice">
+                <i class="fa-solid fa-check icon-active"></i>Khác
+              </div>
+            </div>
+          </div>
+          <div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div> -->
+          <!-- <div id="cbxDepartment" class="m-combobox" mcombobox>
+            <p class="placeholder">Chọn nhập thông tin</p>
+            <div class="icon-combobox">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="m-choice-combobox"></div>
+          </div> -->
+          <mcombobox id="cbxDepartment" api="http://amis.manhnv.net/api/v1/Departments" propValue="DepartmentId" propText="DepartmentName">
+          </mcombobox>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="tsBoxInfo" class="m-toast-message info">
+      <div class="flex">
+          <div class="m-icon-toast">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <p class="text-toast">
+              ahhihii
+          </p>
+          <div class="m-close-toast">
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+      </div>
+  </div>
+
+    <!--  -->
+
+    <!-- <script>
+      // combobox
+
+      var isDisplay = false;
+      var iconCombobox = document.querySelector(".icon-combobox");
+
+      var choiceCombobox = document.querySelector(".m-choice-combobox");
+      iconCombobox.addEventListener("click", function () {
+        if (isDisplay) {
+          choiceCombobox.style.display = "none";
+          combobox.classList.remove("m-combobox-active");
+          isDisplay = false;
+        } else {
+          choiceCombobox.style.display = "block";
+          combobox.classList.add("m-combobox-active");
+          isDisplay = true;
+        }
+      });
+      var combobox = document.querySelector(".m-combobox");
+      var placeholder = document.querySelector(".placeholder");
+      var choicesCombobox = document.querySelectorAll(".m-choice");
+      choicesCombobox.fin;
+      for (let i = 0; i < choicesCombobox.length; i++) {
+        choicesCombobox[i].addEventListener("click", function () {
+          if (choicesCombobox[i].classList.contains("active")) {
+            choicesCombobox[i].classList.remove("active");
+            placeholder.innerText = "Chọn nhập thông tin";
+          } else {
+            for (let i = 0; i < choicesCombobox.length; i++) {
+              choicesCombobox[i].classList.remove("active");
+            }
+            choicesCombobox[i].classList.add("active");
+            let text = choicesCombobox[i].innerText;
+            placeholder.innerText = text;
+          }
+        });
+      }
+    </script> -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/combobox/combobox.js"></script>
+  </body>
+</html>

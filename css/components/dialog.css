@@ -1,0 +1,370 @@
+
+.m-dialog-box {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 999;
+    display:none;
+
+}
+.text-content {
+    padding: 5px 24px 16px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.text-content::before{
+    content: "";
+    display: block;
+    height:4px;
+    width: 75px;
+    background-color:rgba(42,162,122,0.95);
+    border-radius:5px;
+    position: relative;
+    bottom:-22px;
+    
+}
+
+.m-dialog-footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.m-dialog-footer .m-btn {
+    margin-right: 5px;
+}
+
+.m-dialog-box .m-dialog{
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.m-dialog .m-dialog-close,.m-dialog .m-dialog-close2 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 0 4px 0 4px;
+    background-image: url(../../assets/icon/x.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.m-dialog .m-dialog-close:hover,.m-dialog .m-dialog-close2:hover {
+    background-color: #BEBEBE;
+}
+
+.m-dialog .m-dialog-header {
+    padding: 24px;
+    font-weight: 700;
+}
+
+.m-dialog .m-dialog-body {
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.m-dialog .m-dialog-fotter {
+    height: 60px;
+    background-color: #F4F4F4;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.m-dialog .m-dialog-fotter button {
+    pad: 10px 0;
+    margin-left: 16px;
+}
+
+.m-dialog .m-dialog-fotter .m-delete {
+    background-color: #F65454;
+}
+
+.m-dialog .m-dialog-fotter .m-cancel {
+    background-color: #ffffff;
+    color: black;
+}
+
+.m-dialog .m-dialog-fotter .m-cancel:hover {
+    background-color: #E5E5E5;
+    outline: none;
+}
+
+.m-dialog .m-dialog-body .m-dialog-avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-image: url("../../assets/img/toggle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.m-dialog .m-dialog-body .m-dialog-content-text {
+    width: 300px;
+    margin-left: 10px;
+    padding-right: 16px;
+}
+
+.m-dialog .popup-list-aleart {
+    display: flex;
+    width: 300px;
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.m-dialog .popup-list-aleart .icon-popup-list {
+    margin-right: 12px;
+}
+
+.m-dialog .popup-list-aleart .icon-popup-list i {
+    color: red;
+}
+
+.m-dialog .popup-list-aleart .text-popup-list {
+    width: 220px;
+}
+
+.m-dialog-fotter-popup-list {
+    margin-top: 24px;
+}
+
+.m-dialog .m-body-list-adding {
+    display: flex;
+    margin: 0 24px;
+    padding: 16px 0;
+    border-bottom: 1px solid black;
+}
+
+.m-dialog .add-list-center> :last-child {
+    /* margin-bottom: 24px; */
+    border-bottom: none;
+}
+
+.m-dialog .add-list-center> :first-child {
+    padding-top: 0;
+}
+
+.m-dialog .m-body-list-adding {
+    justify-content: space-between;
+}
+
+.m-dialog .m-body-list-adding .list-body-center {
+    width: 336px;
+    padding-left: 12px;
+}
+
+.m-dialog .m-body-list-adding i {
+    font-size: 16px;
+}
+
+.m-dialog .frame-adding-list {
+    padding: 0 24px;
+}
+
+
+.m-dialog .frame-adding-list .form-adding-list {
+    padding-bottom: 16px;
+    /* border: 1px  solid black; */
+
+}
+
+.m-dialog .frame-adding-list .form-adding-list .s-title-adding-list {
+    padding-bottom: 4px;
+
+}
+
+.m-dialog .frame-adding-list> :last-child {
+    margin-bottom: 8px;
+}
+
+.m-dialog .frame-adding-list .form-adding-list .m-ading-input-list {
+    border: 1px solid grey;
+    outline: none;
+    width: 317px;
+    background-image: none;
+    padding-left: -40px;
+}
+
+.frame-select-date {
+    display: flex;
+}
+
+#m-custom-select-date {
+    width: 90px;
+    /* Chinh do rong input - list - calendar */
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+
+.m-ading-input-list::placeholder {
+    padding-left: 0px;
+}
+
+.frame-calender-input {
+    display: flex;
+}
+
+.frame-calender-input .icon-calendar {
+    height: 42px;
+    line-height: 42px;
+    width: 42px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 0 4px 4px 0;
+
+}
+
+.frame-calender-input {
+    padding-right: 16px;
+}
+
+/* Form chi tiết thông tin Nhân viên */
+.form-body-dialog {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.m-dialog-box .m-dialog-form {
+    width: 700px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.m-dialog .m-body-form {
+    padding: 0 24px;
+    padding-bottom: 10px;
+}
+
+.m-dialog .m-body-form .form-component:first-child {
+    padding-right: 40px;
+}
+
+.m-dialog .m-body-form .form-component .form-component-title {
+    margin-bottom: 5px;
+}
+
+.m-dialog .m-body-form .form-component .form-component-input {
+    height: 35px;
+    width: 180px;
+    box-sizing: border-box;
+    
+}
+.form-component-input input,.form-component-input select,.form-component-input textarea {
+    border: 1px solid #bbbbbb;
+    outline: none;
+}
+.form-component-input input:hover,
+.form-component-input select:hover,
+.form-component-input textarea:hover{
+    border: 1px solid #019160
+}
+
+.m-dialog .m-body-form .form-component .form-component-input .form-select {
+    height: 30px;
+    width: 180px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.m-dialog .m-body-form .input-field-date {
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+
+.m-dialog .m-body-form .input-field-form {
+    height: 30px;
+    width: 180px;
+}
+
+
+.m-dialog-body .form-component textarea.input-field-line {
+    width: 395px;
+    height: 50px;
+}
+
+.m-dialog .form-body-dialog {
+    padding-bottom: 32px;
+}
+button#btnCancel{
+    background-color:#cccccc;
+    color: #000;
+    opacity: 0.8;
+}
+button#btnCancel:hover{
+    opacity: 1;
+}
+.img-dialog{
+    width:200px;
+    height: 200px;
+    border: 5px solid #cccccc;
+    border-radius: 50%;
+    display: flex;
+}
+.img-dialog img {
+        width: 150px;
+        height: 150px;
+        margin:auto;
+        position: relative;
+        top: -5px;
+}
+.left-content-dialog {
+    padding: 0 24px;
+}
+.text-dialog {
+    text-align: center;
+}
+.m-dialog-form input{
+    border-radius: 5px;
+}
+.m-dialog-form input:focus{
+    border-color: #019160;
+}
+/* /Form chi tiết thông tin Nhân viên */
+
+/* error dialog */
+.form-component {
+    position: relative;
+}
+div#errorDialog {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: start;
+    background-color: rgba(200,53,53,0.9);
+    min-width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    top: 19px;
+    right: 118px;
+    padding: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.36);
+
+}
+.errorDialogIcon {
+    position: relative;
+    bottom: -2px;
+}
+.errorDialogMsg {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
